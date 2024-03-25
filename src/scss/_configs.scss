@@ -1,0 +1,33 @@
+$xs-min: 480px;
+$sm-min: 768px;
+$md-min: 992px;
+$lg-min: 1200px;
+
+$dark-gray: #707070;
+$helvetica: '"Helvetica Neue","HelveticaNeue-Light","Helvetica Neue Light",Helvetica,Arial,"Lucida Grande",sans-serif';
+$lucida: '"Lucida Sans Unicode", "Lucida Grande", sans-serif';
+$helvi: "Helvetica Neue LT W05_45 Light";
+$helvi-md-cn: "Helvetica Neue LT W05_67 Md Cn";
+$helvi-md-65: "Helvetica Neue LT W05_65 Medium";
+
+$brand-green: #00b8b0;
+$brand-purple: #ef0ea1;
+$brand-lt-purple: #d172af;
+$brand-yellow: #ffe179;
+$brand-orange: #f16321;
+$brand-navy-blue: #002954;
+$brand-grey: #707070;
+$brand-blue:#1E64A7;
+
+@import "./fonts";
+
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+$base-padding: 0.5rem;
+$base-maxwidth: 960px;
+$base-fontsize: 16;
+
+@mixin font-size($n) {
+  font-size: (1 / $base-fontsize) * $n + rem;
+}

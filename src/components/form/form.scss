@@ -1,0 +1,131 @@
+@import "../../scss/configs";
+
+.bp3-text,
+.bp3-form-group,
+.bp3-input-group,
+.bp3-control,
+.bp3-button {
+  font-family: Arial, $helvi;
+}
+
+.form-container {
+  background-color: white;
+  font-family: Arial, $helvi;
+}
+
+.radio-label-container {
+  box-sizing: border-box;
+  width: 60px;
+  font-size: 14px !important;
+}
+
+.brand-purple {
+  color: $brand-purple;
+}
+
+.brand-grey {
+  color: $brand-grey;
+}
+
+.brand-orange {
+  color: $brand-orange;
+}
+
+.bkg-brand-orange {
+  background: $brand-orange;
+}
+
+.brand-bold-purple {
+  @extend .brand-purple;
+  font-weight: bold;
+}
+
+.bp3-button {
+  &.bkg-brand-orange {
+    background: $brand-orange;
+  }
+}
+.form-submitted {
+  color:green;
+  font-weight:bold;
+  font-size:16px;
+}
+.reset-margin-container {
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-top: $base-padding;
+  font-family: Arial, $helvi;
+  @media only screen and (min-width: $md-min) {
+    width: $base-maxwidth;
+  }
+  @media only screen and (max-width: $md-min) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.padding-top {
+  padding-top: 3 * $base-padding;
+}
+
+.padding-bottom {
+  padding-bottom: $base-padding;
+}
+
+.react-add-to-calendar__dropdown {
+  z-index: 10;
+}
+
+.bkg-brand-orange-container {
+  background: $brand-orange;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid $brand-orange;
+  box-sizing: border-box;
+}
+
+.btn-submit-registration {
+  @extend .bkg-brand-orange-container;
+  width: 140px;
+  padding: $base-padding;
+  font-weight: bold;
+  margin-top: 12px;
+  font-size: 20px;
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+.add-to-calendar {
+  @extend .bkg-brand-orange-container;
+  font-weight: bold;
+  font-size: 20px;
+  padding: $base-padding;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.bp3-form-fellowship {
+  .bp3-radio {
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+}
+
+.reset-margin-container {
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 16px 8px;
+  }
+}
+
+.brand-navy-blue {
+  color: $brand-navy-blue;
+}
