@@ -45,12 +45,12 @@
   "license": "MIT",
   "scripts": {
     "task": "mkdir bkp_public && cd public && mv * ../bkp_public/ && mkdir -p hcpenrollment/ && cd ../bkp_public/ && mv * ../public/hcpenrollment/ && cd ../public/ && rm -rf ../bkp_public/",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths && npm run task",
     "ntlbuild": "gatsby build",
     "buildendo": "gatsby build --prefix-paths && npm run task",
     "develop": "NODE_ENV=integration gatsby develop",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --prefix-paths -o",
     "build:serve": "npm run build && npm run serve",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
