@@ -1,0 +1,19 @@
+[build]
+  command = "npm run buildendo"
+  functions = "src/functions"
+  publish = "public/hcpenrollment"
+
+[[redirects]]
+  from = "/api/signup-service"
+  to = "/.netlify/functions/signup-service"
+  status = 200
+
+[[redirects]]
+  from = "/api/fellows-survey"
+  to = "/.netlify/functions/fellows-survey"
+  status = 200
+
+[[redirects]]
+  from = "/api/insert-survey"
+  to = "/.netlify/functions/insert-survey"
+  status = 200
