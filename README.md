@@ -109,3 +109,10 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+### Add netlify.toml file in root directory and add the following build command and publish folder
+[build]
+  command = "yarn run ntlbuild"
+  functions = "src/functions"
+  publish = "public"
+
